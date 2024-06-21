@@ -1,27 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import Card from "./components/Card";
 
 const App = () => {
-  let [count, setCount] = useState(0);
-
-  const IncreaseValue = () => {
-    setCount(count + 1);
-  };
-
-  const DecreaseValue = () => {
-    setCount(count - 1);
-  };
-
-  // const [name, setName] = useState("Akshaay Dangi");
-
   return (
-    <>
-      <h1>Hello Evryone</h1>
-      <span>count:{count}</span> <br />
-      <button onClick={IncreaseValue}>Increase</button> <br />
-      <button onClick={DecreaseValue}>Decrease</button>
-      {/* {name} <br />
-      <button onClick={() => setName("Nikhil")}>Change</button> */}
-    </>
+    <div>
+      <Card text="this is first card" />
+      <Card data="this is 2 data" text="this is second card" />
+      <Card data="this is data" />
+    </div>
   );
 };
 
