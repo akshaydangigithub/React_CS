@@ -1,13 +1,16 @@
 import React from "react";
-import Card from "./components/Card";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./screens/Homepage";
+import About from "./screens/About";
 
 const App = () => {
   return (
-    <div>
-      <Card text="this is first card" />
-      <Card data="this is 2 data" text="this is second card" />
-      <Card data="this is data" />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<About/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
