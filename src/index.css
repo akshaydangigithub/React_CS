@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input{
+    border: 2px solid black;
+    margin: 20px;
+    padding: 10px;
+    outline: none;
+}
+
+button{
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+}
